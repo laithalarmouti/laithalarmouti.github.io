@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Laith Armouti",
-  title: "Hi all, I'm Laith",
+  title: "Hallo, ich bin Laith",
   subTitle: emoji(
-    "A passionate Embedded Software Developer 🚀 specializing in STM32 firmware development, real-time systems with FreeRTOS, communication protocols (CAN, SPI, I2C, UART), and embedded machine learning using TensorFlow Lite Micro."
+    "Ein leidenschaftlicher Embedded-Software-Entwickler 🚀 spezialisiert auf ARM Cortex-M Firmware-Entwicklung, Echtzeitsysteme mit FreeRTOS, Kommunikationsprotokolle (CAN, SPI, I2C, UART) und eingebettetes maschinelles Lernen mit TensorFlow Lite Micro."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1XgwKDvfSTEgITTozdTBzQcLS4AOupyve/view?usp=sharing", 
@@ -45,23 +45,23 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "Embedded Software Engineer specializing in STM32 firmware, real-time systems, communication protocols, and embedded machine learning.",
+  title: "Was ich mache",
+  subTitle: "Embedded-Software-Entwickler spezialisiert auf ARM Cortex-M Firmware, Echtzeitsysteme, Kommunikationsprotokolle und eingebettetes maschinelles Lernen.",
   skills: [
     emoji(
-      "⚡ Develop low-level firmware for STM32 microcontrollers using C/C++ and direct hardware register programming"
+      "⚡ Entwicklung von Low-Level-Firmware für ARM Cortex-M Mikrocontroller in C/C++ mit direkter Hardware-Register-Programmierung"
     ),
     emoji(
-      "⚡ Design real-time embedded systems using FreeRTOS, multitasking, interrupts, and peripheral drivers"
+      "⚡ Entwurf von Echtzeit-Embedded-Systemen mit FreeRTOS, Multitasking, Interrupts und Peripherietreibern"
     ),
     emoji(
-      "⚡ Implement communication protocols such as CAN, SPI, I2C, and UART for embedded device communication"
+      "⚡ Implementierung von Kommunikationsprotokollen wie CAN, SPI, I2C und UART für die Gerätekommunikation"
     ),
     emoji(
-      "⚡ Deploy machine learning models on microcontrollers using TensorFlow Lite Micro for embedded AI applications"
+      "⚡ Deployment von Machine-Learning-Modellen auf Mikrocontrollern mit TensorFlow Lite Micro für Embedded-AI-Anwendungen"
     ),
     emoji(
-      "⚡ Build complete embedded systems including sensor integration, signal processing, and real-time data analysis"
+      "⚡ Entwicklung vollständiger Embedded-Systeme einschließlich Sensorintegration, Signalverarbeitung und Echtzeit-Datenanalyse"
     )
   ],
 
@@ -70,19 +70,15 @@ https://fontawesome.com/icons?d=gallery */
 
 softwareSkills: [
   {
-    skillName: "C",
+    skillName: "C/C++",
     fontAwesomeClassname: "fas fa-code"
   },
   {
-    skillName: "C++",
-    fontAwesomeClassname: "fas fa-code"
-  },
-  {
-    skillName: "Low-Level Firmware Development",
+    skillName: "Firmware",
     fontAwesomeClassname: "fas fa-microchip"
   },
   {
-    skillName: "STM32",
+    skillName: "ARM Cortex-M",
     fontAwesomeClassname: "fas fa-microchip"
   },
   {
@@ -94,12 +90,8 @@ softwareSkills: [
     fontAwesomeClassname: "fas fa-brain"
   },
   {
-    skillName: "CAN Bus",
+    skillName: "CAN / SPI / I2C / UART",
     fontAwesomeClassname: "fas fa-network-wired"
-  },
-  {
-    skillName: "SPI / I2C / UART",
-    fontAwesomeClassname: "fas fa-exchange-alt"
   },
   {
     skillName: "Git",
@@ -120,23 +112,23 @@ const educationInfo = {
     {
       schoolName: "GISMA University of Applied Science",
       logo: require("./assets/images/gismaLogo.png"),
-      subHeader: "Master of Science in Computer Science",
+      subHeader: "Master of Science in Informatik",
       duration: "July 2024 - July 2025",
-      desc: "Conducted research on AI-powered fall detection using STM32 microcontrollers and embedded machine learning with TensorFlow Lite Micro, achieving the highest thesis grade in the class (95/100).",
+      desc: "Forschung zu KI-gestützter Sturzerkennung mit ARM Cortex-M Mikrocontrollern und eingebettetem maschinellem Lernen mit TensorFlow Lite Micro — beste Abschlussarbeit des Jahrgangs (95/100).",
       descBullets: [
-        "Developed an embedded fall detection system using STM32F411RE and MPU6050 sensors",
-        "Implemented and deployed a machine learning model on microcontrollers using TensorFlow Lite Micro"
+        "Entwicklung eines Sturzerkennungssystems auf dem STM32F411RE: Training eines MLP-Modells auf dem SisFall-Datensatz, Int8-Quantisierung zur Ressourcenoptimierung und vollständige On-MCU-Inferenz mit TensorFlow Lite Micro",
+        "Vergleich der Erkennungsgenauigkeit zwischen Einzel- und Dual-Gyroskop-Konfigurationen zur Bewertung des Einflusses der Sensoranzahl auf die Modellleistung"
       ]
     },
     {
       schoolName: "Girne American University",
       logo: require("./assets/images/GirneLogo.png"),
-      subHeader: "Bachelor of Science in Computer Engineering",
+      subHeader: "Bachelor of Science in Technische Informatik",
       duration: "July 2017 - July 2021",
-      desc: "Completed a Bachelor's degree in Computer Engineering with coursework focused on computer architecture, operating systems, embedded systems, and software engineering.",
+      desc: "Bachelorabschluss in Technische Informatik mit Schwerpunkten in Rechnerarchitektur, Betriebssystemen, Embedded Systems und Software Engineering.",
       descBullets: [
-        "Studied core engineering subjects including data structures, operating systems, computer architecture, and software engineering",
-        "Built a strong foundation in C/C++ programming and low-level system development"
+        "Kernfächer: Datenstrukturen, Betriebssysteme, Rechnerarchitektur und Software Engineering",
+        "Solide Grundlage in C/C++ Programmierung und Low-Level-Systementwicklung"
       ]
     }
   ]
@@ -148,15 +140,19 @@ const techStack = {
   viewSkillBars: true,
   experience: [
     {
-      Stack: "Embedded Firmware Development (C/C++, STM32)",
+      Stack: "Embedded Firmware Entwicklung (C/C++, ARM Cortex-M)",
       progressPercentage: "90%"
     },
     {
-      Stack: "Real-Time Systems (FreeRTOS, Interrupts, DMA)",
+      Stack: "Kommunikationsprotokolle (CAN, SPI, I2C, UART)",
       progressPercentage: "85%"
     },
     {
-      Stack: "Embedded Machine Learning (TensorFlow Lite Micro)",
+      Stack: "Echtzeitsysteme (FreeRTOS)",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Eingebettetes maschinelles Lernen (TensorFlow Lite Micro)",
       progressPercentage: "70%"
     }
   ],
@@ -172,10 +168,10 @@ const workExperiences = {
       company: "Trinitae Duftkultur Gmbh",
       companylogo: require ("./assets/images/trinitaeLogo.png"),
       date:"May 2024 – Jul 2024",
-      desc: "Supported the development and launch of Trinitae Duftkultur’s official website and backend systems to support business operations.",
+      desc: "Unterstützung bei der Entwicklung und dem Launch der offiziellen Website und Backend-Systeme von Trinitae Duftkultur.",
       descBullets: [
-       "Developed backend functionality and business logic to support e-commerce operations",
-        "Collaborated with the team to launch the company's official online platform"
+       "Entwicklung von Backend-Funktionalitäten zur Unterstützung des E-Commerce-Betriebs",
+        "Mitarbeit beim Launch der offiziellen Online-Plattform des Unternehmens"
       ]
 
 
@@ -186,10 +182,10 @@ const workExperiences = {
       company: "Kaizen Plus",
       companylogo: require("./assets/images/kaizenLogo.png"),
       date: "January 2024 – May 2024",
-      desc: "Worked on enterprise software systems and web applications supporting operational monitoring and safety systems.",
+      desc: "Arbeit an Unternehmenssoftware und Webanwendungen zur Unterstützung von Betriebsüberwachung und Sicherheitssystemen.",
       descBullets: [
-       "Developed a web-based employee tracking and risk-avoidance system for ADNOC (UAE)",
-        "Worked with .NET Core, Angular, and Redis to support real-time monitoring systems"
+       "Entwicklung eines webbasierten Mitarbeiter-Tracking- und Risikovermeidungssystems für ADNOC (VAE)",
+        "Einsatz von .NET Core, Angular und Redis zur Unterstützung von Echtzeit-Überwachungssystemen"
       ]
     },
     {
@@ -197,19 +193,19 @@ const workExperiences = {
       company: "Alameed",
       companylogo: require("./assets/images/ameedLogo.png"),
       date: "June 2023 – Jan 2024",
-      desc: "Developed full-stack applications to support internal business operations."
+      desc: "Entwicklung von Full-Stack-Anwendungen zur Unterstützung interner Geschäftsprozesse."
     },
     {
       role: "Junior Embedded Software Developer",
       company: "Kalamintina",
       companylogo: require("./assets/images/kalamintinaLogo.png"),
       date: "Jun 2022 – Jun 2023",
-      desc: "Developed embedded firmware for ARM Cortex-M microcontrollers with a focus on STM32 platforms.",
+      desc: "Entwicklung von Embedded-Firmware für ARM Cortex-M Mikrocontroller mit Schwerpunkt auf STM32-Plattformen.",
       descBullets: [
-        "Implemented embedded firmware in C/C++ for STM32 microcontrollers",
-        "Developed low-level peripheral drivers (GPIO, I2C, SPI, UART, CAN)",
-        "Applied RTOS concepts including task scheduling and synchronization",
-        "Worked on debugging, testing, and optimization of embedded systems"
+        "Implementierung von Embedded-Firmware in C/C++ für STM32 Mikrocontroller",
+        "Entwicklung von Low-Level-Peripherietreibern (GPIO, I2C, SPI, UART, CAN)",
+        "Anwendung von RTOS-Konzepten einschließlich Task-Scheduling und Synchronisation",
+        "Debugging, Testing und Optimierung von Embedded-Systemen"
       ]
     }
   ]
@@ -226,16 +222,27 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Featured Projects",
-  subtitle: "Firmware development projects using STM32, FreeRTOS, and embedded machine learning",
+  title: "Ausgewählte Projekte",
+  subtitle: "Firmware-Entwicklungsprojekte mit ARM Cortex-M, FreeRTOS und eingebettetem maschinellem Lernen",
   projects: [
     {
       image: require("./assets/images/STLogo.png"),
-      projectName: "CNN Fall Detection on STM32",
-      projectDesc: "AI-powered fall detection system deployed on STM32F411RE using MPU6050 sensors and TensorFlow Lite Micro. Implements signal processing, feature extraction, and real-time inference on ARM Cortex-M microcontrollers.",
+  projectName: "MLP Sturzerkennung auf ARM Cortex-M (Abschlussarbeit)",
+  projectDesc: "Abschlussarbeit: Sturzerkennungssystem auf dem STM32F411RE mit einem trainierten MLP-Modell auf dem SisFall-Datensatz. Int8-Quantisierung für ressourcenbeschränkte Hardware und vollständige On-MCU-Inferenz mit TensorFlow Lite Micro. Vergleich der Erkennungsgenauigkeit zwischen Einzel- und Dual-Gyroskop-Konfigurationen.",
+  footerLink: [
+    {
+      name: "Repository besuchen",
+      url: "https://github.com/laithalarmouti/wearable-fall-detection"
+    }
+  ]
+    },
+    {
+      image: require("./assets/images/STLogo.png"),
+      projectName: "CNN Sturzerkennung auf ARM Cortex-M",
+      projectDesc: "KI-basiertes Sturzerkennungssystem auf dem STM32F411RE mit MPU6050-Sensoren und TensorFlow Lite Micro. Implementiert Signalverarbeitung, Feature-Extraktion und Echtzeit-Inferenz mittels eines CNN-Modells auf ARM Cortex-M",
       footerLink: [
         {
-          name: "Visit Repository",
+          name: "Repository besuchen",
           url: "https://github.com/laithalarmouti/CNN_FALLDETECTION_STM32"
         }
         //  you can add extra buttons here.
@@ -244,22 +251,22 @@ const bigProjects = {
     {
       image: require("./assets/images/STLogo.png"),
       projectName: "Industrial Edge Simulator (CAN + FreeRTOS)",
-      projectDesc: "STM32F446RE project demonstrating CAN communication with a FreeRTOS-based architecture. Includes CAN RX/TX tasks, UART CLI interface, message queues, and real-time logging for embedded debugging.",
+      projectDesc: "Embedded-Projekt auf ARM Cortex-M zur Demonstration von CAN-Kommunikation mit FreeRTOS-Architektur. Enthält CAN RX/TX Tasks, UART-CLI-Schnittstelle, Message Queues und Echtzeit-Logging für Embedded-Debugging.",
       footerLink: [
         {
-          name: "Visit Repository",
+          name: "Repository besuchen",
           url: "https://github.com/laithalarmouti/Industrial-Edge-Simulator"
         }
       ]
     },
     {
       image: require("./assets/images/STLogo.png"),
-      projectName: "STM32 Bare-Metal Driver Development",
+      projectName: "Bare-Metal Treiber-Entwicklung",
       projectDesc:
-        "Low-level driver development for STM32F411RE using bare-metal programming. Implements GPIO, UART, I2C, and SPI drivers using memory-mapped registers and interrupt-based communication.",
+        "Low-Level-Treiberentwicklung für ARM Cortex-M mittels Bare-Metal-Programmierung (STM32F411RE). Implementiert GPIO-, UART-, I2C- und SPI-Treiber über speichermappierte Register und interrupt-basierte Kommunikation.",
       footerLink: [
         {
-          name: "Visit Repository",
+          name: "Repository besuchen",
           url: "https://github.com/laithalarmouti/STM32F411RE"
         }
         
@@ -267,24 +274,24 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/STLogo.png"),
-      projectName: "MPU6050 Sensor Data Visualization",
+      projectName: "MPU6050 Sensordaten-Visualisierung",
       projectDesc:
-        "Embedded system for reading MPU6050 IMU data and visualizing motion signals using serial plotter output. Demonstrates sensor interfacing, data acquisition, and real-time data monitoring.",
+        "Embedded-System zur Erfassung von MPU6050-IMU-Daten und Visualisierung von Bewegungssignalen über Serial-Plotter-Ausgabe. Demonstriert Sensor-Interfacing, Datenerfassung und Echtzeit-Datenüberwachung.",
       footerLink: [
         {
-          name: "Visit Repository",
+          name: "Repository besuchen",
           url: "https://github.com/laithalarmouti/MPU6050READ-PLOT"
         }
       ]
     },
      {
       image: require("./assets/images/STLogo.png"),
-      projectName: "STM32 Temperature Monitoring with OLED",
+      projectName: "Temperaturüberwachung mit OLED-Display",
       projectDesc:
-        "Embedded temperature monitoring system using the DS18B20 digital temperature sensor with real-time data displayed on an SSD1306 OLED screen. Demonstrates OneWire communication, I2C display interfacing, and embedded sensor integration.",
+        "Eingebettetes Temperaturüberwachungssystem mit DS18B20-Digitalsensor und Echtzeit-Datenanzeige auf einem SSD1306-OLED-Display. Demonstriert OneWire-Kommunikation, I2C-Display-Interfacing und Sensor-Integration.",
       footerLink: [
         {
-          name: "Visit Repository",
+          name: "Repository besuchen",
           url: "https://github.com/laithalarmouti/STM32_DS18B20_Temperature_OLED"
         }
       ]
@@ -300,20 +307,20 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Certifications & Embedded Training 🏆"),
+  title: emoji("Zertifizierungen & Embedded Training 🏆"),
   subtitle:
-    "Professional certifications and advanced training in embedded systems, microcontroller programming, and real-time operating systems",
+    "Professionelle Zertifizierungen und vertieftes Training in Embedded Systems, Mikrocontroller-Programmierung und Echtzeit-Betriebssystemen",
 
   achievementsCards: [
     {
       title: "Mastering Microcontroller and Embedded Driver Development",
       subtitle:
-        "Comprehensive training on ARM Cortex-M microcontrollers, bare-metal programming, memory-mapped registers, and low-level peripheral driver development.",
+        "Umfassendes Training zu ARM Cortex-M Mikrocontrollern, Bare-Metal-Programmierung, speichermappierten Registern und Low-Level-Peripherietreiber-Entwicklung.",
       image: require("./assets/images/udemyLogo.png"),
       imageAlt: "Embedded Driver Development Certificate",
       footerLink: [
         {
-          name: "View Certificate",
+          name: "Zertifikat ansehen",
           url: "https://drive.google.com/file/d/1joUQ4RoIGFnMAuaKqcFDqd2KKRiaeMPZ/view?usp=sharing"
         }
       ]
@@ -321,12 +328,12 @@ const achievementSection = {
     {
       title: "Mastering Microcontroller: Timers, PWM, CAN, Low Power",
       subtitle:
-        "Advanced microcontroller programming including hardware timers, PWM generation, CAN communication, and low-power embedded system design.",
+        "Fortgeschrittene Mikrocontroller-Programmierung mit Hardware-Timern, PWM-Erzeugung, CAN-Kommunikation und stromsparendem Embedded-System-Design.",
       image: require("./assets/images/udemyLogo.png"),
       imageAlt: "Microcontroller Timers PWM CAN Certificate",
       footerLink: [
         {
-          name: "View Certificate",
+          name: "Zertifikat ansehen",
           url: "https://drive.google.com/file/d/1jO_rpfHJdOS1-FzeUMFpx3nd9mkjwBEh/view?usp=sharing"
         }
       ]
@@ -334,12 +341,12 @@ const achievementSection = {
 
     {
       title: "Mastering RTOS: Hands-on FreeRTOS and STM32Fx",
-      subtitle: "Hands-on development of real-time embedded systems using FreeRTOS including task scheduling, queues, semaphores, mutexes, and debugging techniques.",
+      subtitle: "Praktische Entwicklung von Echtzeit-Embedded-Systemen mit FreeRTOS — Task-Scheduling, Queues, Semaphoren, Mutexe und Debugging-Techniken.",
       image: require("./assets/images/udemyLogo.png"),
       imageAlt: "FreeRTOS STM32 Certificate",
       footerLink: [
         {
-          name: "View Certificate", 
+          name: "Zertifikat ansehen", 
           url: "https://drive.google.com/file/d/18F_KL_dggCYYgJJSjTWgrDjQJoBxq_Px/view?usp=sharing"
         }
 
@@ -407,17 +414,17 @@ const podcastSection = {
 
 // Resume Section
 const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
+  title: "Lebenslauf",
+  subtitle: "Lebenslauf gerne herunterladen",
 
   // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Kontakt ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Projektanfragen oder einfach Hallo sagen? Mein Posteingang ist immer offen.",
   number: "+49 176 76164535",
   email_address: "laithalarmouti@gmail.com"
 };
